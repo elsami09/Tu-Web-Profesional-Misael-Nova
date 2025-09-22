@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../assets"
+		},
+		{
+			"path": "../../images"
+		},
+		{
+			"path": "../../practicas de js"
+		}
+	],
+	"settings": {}
+}
