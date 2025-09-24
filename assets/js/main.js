@@ -42,14 +42,15 @@
 
 	// Nav.
 
-		// Title Bar.
+				// Title Bar.
 			$(
-				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
-				'</div>'
+			'<div id="titleBar">' +
+				'<a href="#navPanel" class="toggle"></a>' +
+				'<span class="title">Wander misael</span>' +
+			'</div>'
 			)
-				.appendTo($body);
+			.appendTo($body);
+
 
 		// Panel.
 			$(
@@ -246,5 +247,6 @@
 
 		$banner
 			._parallax();
+
 
 })(jQuery);
