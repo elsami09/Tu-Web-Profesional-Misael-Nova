@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    .img-misael{
+        margin-top: 80px;
+        transform: scaleX(2) scaleY(2.5);
+    }
+    .logo-wm{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 2px solid #fff;
+    }
+
+    .logo-wm:hover{
+        animation:palpaderar 1s infinite both;
+    }
+
+    @keyframes palpaderar {
+        10%{
+    filter: drop-shadow(0 0 5px #f7f8fc);
+
+        }
+        25%{
+    filter: drop-shadow(0 0 10px #f7f7f7);
+        }
+            50%{
+    filter: drop-shadow(0 0 30px #f7f8f8);
+
+        }
+        25%{
+    filter: drop-shadow(0 0 40px #ffffff);
+        }
+    }
+    h1{
+        font-size: 35px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .whatsapp-float {
+    position: fixed;   /* Siempre visible, no se mueve al hacer scroll */
+    bottom: 20px;      /* Separación desde el borde inferior */
+    width: 60px;
+    right: 20px;       /* Tamaño del botón */
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp-icon {
+    width: 35px;  /* Tamaño del icono dentro del botón */
+    height: 35px;
+    }
+
+    .programador {
+        border-radius: 6px;
+        box-shadow: 0 0 10px #ffffff65;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+
+    }
+
+    .programador:hover{
+            animation: flotar 3s ease-in-out infinite alternate;
+            cursor: pointer;
+    }
+
+    @keyframes flotar {
+        0% {
+            margin-top: 0;
+        }
+        25% {
+            margin-top: -10px;
+        }
+        50% {
+            margin-top: -5px;
+        }
+        75% {
+            margin-top: 2px;
+        }
+        100% {
+            margin-top: 0;
+        }
+        }
+
+/*paquetes de precios*/
+.paquetes header{
+    background-color: #1c1d26;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.paquetes{
+    text-align: center;
+    background-color: #282931;
+}
+
+
+    .proyectos-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+
+    }
+
+/*paquetes de proyectos*/
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.proyectos-info {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.proyectos-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0a84ff;
+}
+.proyectos-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dce4f1;
+}
+.proyecto-m {
+width: 400px;
+    background-color: #1c1d26;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    box-shadow: inset 0 0 5px #fff;
+}
+.proyecto-m:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.proyecto-m h3 {
+    margin-bottom: 10px;
+    color: #0a84ff;
+    font-size: 1.3rem;
+}
+.proyecto-m p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.proyecto-m ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    color: #dce4f1;
+}
+.proyecto-m ul li {
+    margin: 0.5rem 0;
+}
+.proyecto-m .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a84ff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.proyecto-m .btn:hover {
+    background-color: #006bd6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+    
+@media (min-width: 1024px) {
+    .img-misael{
+        margin-top: 150px;
+        transform: scaleX(2) scaleY(2.5);
+    }
+    .proyectos-container {
+        gap: 50px;
+        padding: 70px;
+    }
+
+
+    .whatsapp-float {
+        width: 70px;
+        height: 70px;
+    }
+
+    .whatsapp-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .proyecto-m h3 {
+        font-size: 1.6rem;
+    }
+
+    .proyecto-m p {
+        font-size: 1.3rem;
+    }
+    .precios-sty{
+        margin-left: 400px;
+    }
+    .width{
+width: 30%;
+height: auto;
+margin: auto;
+}
+
+}
+/* Estilos para el botón de WhatsApp */
+.whatsapp{
+text-align: center;
+}
+    .actions .whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* espacio entre icono y texto */
+    background-color: #25D366; /* verde WhatsApp */
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    }
+
+    .actions .whatsapp:hover {
+    background-color: #1ebe5d; /* verde más oscuro al pasar */
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px #25D36666;
+    }
+
+    .actions .whatsapp i {
+    font-size: 1.2rem; /* tamaño del icono */
+    }
+
+.siguiente-btn{
+    left: 220px;
+}
+.btn-pdf{
+margin-top: 20px;
+
+}
+
+
+
+
